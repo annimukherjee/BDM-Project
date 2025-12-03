@@ -1,0 +1,89 @@
+{
+  "accrual_periodicity": "annually",
+  "additional_limitations": "",
+  "citation": "",
+  "contact_email": "dataandreports@hcai.ca.gov",
+  "data_collection_tool": "Patient  Data  Reporting",
+  "data_license": "Terms of Use",
+  "de_identification_method": "https://chhsdata.github.io/dataplaybook/resource_library/#datade-id",
+  "description": "This dataset contains counts of hospital emergency department visits and emergency department admissions by facility. ",
+  "geo_coverage": "Statewide",
+  "geographic_granularity": "location point",
+  "keywords": [
+    "ED",
+    "ED admits",
+    "ED visits",
+    "Emergency Department",
+    "department of health care access and information",
+    "hcai"
+  ],
+  "limitations": "Limitations",
+  "name": "hospital-emergency-department-encounters-by-facility",
+  "program_web_page": "https://hcai.ca.gov/",
+  "related_resources": "",
+  "resources": [
+    {
+      "description": "This data table contains counts of hospital emergency department visits and emergency department admissions by facility. ",
+      "format": "CSV",
+      "hash": "3b7a6837c10842e519026b62680218b4",
+      "name": "hospital-emergency-department-encounters-by-facility",
+      "path": "hospital-emergency-department-encounters-by-facility.csv",
+      "schema": {
+        "fields": [
+          {
+            "description": "Year of service.",
+            "name": "year",
+            "type": "string"
+          },
+          {
+            "description": "A unique number established by the Department of Health Care Access and Information (HCAI) for identifying facilities and used in the Licensed Facility Information System (LFIS). The first three numbers identify the type of facility, the next two represent the county number, and the last five are randomly assigned within each county.",
+            "name": "oshpd_id",
+            "title": "OSHPD_ID",
+            "type": "string"
+          },
+          {
+            "description": "Name of the facility.\r\n",
+            "name": "facility_name",
+            "type": "string"
+          },
+          {
+            "description": "County name where facility is located.",
+            "name": "county_name",
+            "type": "string"
+          },
+          {
+            "description": "\"Hospital services providing immediate initial evaluation and treatment of acutely ill or injured patients on a 24-hour basis.  Licensed EMS levels are: \r\n1. Standby: Provision of emergency medical care in a specifically designated area of the hospital that is equipped and maintained at all times to receive patients with urgent medical problems, and is capable of providing physician service within a reasonable time. 2. Basic: Provision of emergency medical care in a specifically designated area of the hospital that is staffed and equipped at all times to provide prompt care for any patient presenting urgent medical problems. 3. Comprehensive: Provision of diagnostic and therapeutic services for unforeseen physical and mental disorders that, if not properly treated, would lead to marked suffering, disability, or death. The scope of services is comprehensive with in-house capability for managing all medical situations on a definitive and continuing basis. 4. Trauma: Emergency rooms which are staffed and equipped at the highest level to treat any and all severe trauma cases. A local Emergency Medical Services Agency determines the level of designation. 5. Blank or Not Applicable means that the hospital or healthcare facility does not have emergency services.\"\r\n",
+            "name": "er_service_level_desc",
+            "type": "string"
+          },
+          {
+            "description": "ED_Visit:  Encounter in which patient is treated in the Emergency Department and then released.\r\nED_Admit: Encounter in which the patient is initially treated in the Emergency Department and then admitted to the same hospital for continued inpatient care.",
+            "name": "type",
+            "title": "Type of Encounter",
+            "type": "string"
+          },
+          {
+            "description": "Number of encounters.",
+            "name": "count",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/5b5ec987-692c-4b63-a6cb-ef97db518ee7/resource/eb592e95-d6bd-4ec7-9493-840978188c88/download/encounters-by-facility_2012-2024_20250807.csv",
+          "title": "Hospital Emergency Department – Encounters by Facility"
+        }
+      ],
+      "title": "Hospital Emergency Department – Encounters by Facility"
+    }
+  ],
+  "secondary_sources": "",
+  "sources": [
+    {
+      "name": "Department of Health Care Access and Information, Healthcare Analytics Branch"
+    }
+  ],
+  "temporal_coverage": "2012-most recent available",
+  "title": "Hospital Emergency Department - Encounters by Facility"
+}
