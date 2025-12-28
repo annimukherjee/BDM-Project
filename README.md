@@ -1,4 +1,7 @@
 # BDM Project
+
+Project created for the BDM Project Course (https://study.iitm.ac.in/diploma/course_pages/BSMS2001P.html).
+
 ## Optimizing Emergency Department Operations: Analyzing Patient Flow, Capacity, and Resource Allocation
 
 <!-- Presentation images (set width once by editing each width value via find/replace) -->
